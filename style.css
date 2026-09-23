@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #172033;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1050px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* SIDEBAR */
+
+.sidebar {
+    background: linear-gradient(160deg, #071b34, #124477);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.profile {
+    width: 175px;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+.sidebar h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.status {
+    color: #c9d9ec;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+
+/* KONTAK */
+
+.contact {
+    text-align: left;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 25px;
+}
+
+.contact h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-size: 14px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTENT */
+
+.content {
+    padding: 45px 50px;
+}
+
+.content section {
+    margin-bottom: 35px;
+}
+
+.content h2 {
+    color: #124477;
+    font-size: 23px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dce6f2;
+}
+
+.content p {
+    color: #505b6b;
+}
+
+
+/* ITEM */
+
+.item {
+    margin-bottom: 22px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.item span {
+    color: #50739a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #edf4fb;
+    color: #124477;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE / HP */
+
+@media (max-width: 750px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+
+    .sidebar {
+        padding: 30px 20px;
+    }
+
+    .content {
+        padding: 30px 25px;
+    }
+
+}
