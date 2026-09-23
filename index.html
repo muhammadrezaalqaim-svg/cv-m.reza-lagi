@@ -1,129 +1,164 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Muhammad Reza Alqaim</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f7;
+    color: #172033;
+    line-height: 1.6;
+}
 
-    <div class="container">
+/* CONTAINER */
 
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-
-            <img src="foto-reza.jpg" alt="Foto Muhammad Reza Alqaim" class="profile">
-
-            <h1>Muhammad Reza Alqaim</h1>
-            <p class="status">Pelajar SMK</p>
-
-            <div class="contact">
-                <h2>Kontak</h2>
-
-                <p>📧 muhammadrezaalqaim@gmail.com</p>
-
-                <p>
-                    📷
-                    <a href="https://www.instagram.com/rezealon/"
-                       target="_blank">
-                        @rezealon
-                    </a>
-                </p>
-
-                <p>📍 Balikpapan, Kalimantan Timur</p>
-            </div>
-
-        </aside>
+.container {
+    max-width: 1050px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
 
 
-        <!-- CONTENT -->
-        <main class="content">
+/* SIDEBAR */
 
-            <section>
-                <h2>Tentang Saya</h2>
+.sidebar {
+    background: linear-gradient(160deg, #071b34, #124477);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+}
 
-                <p>
-                    Saya adalah siswa SMK Airlangga Balikpapan yang memiliki
-                    ketertarikan pada teknologi, jaringan komputer, desain,
-                    dan pembuatan konten digital. Saya senang mempelajari
-                    hal-hal baru, bekerja sama dalam tim, dan mengembangkan
-                    kemampuan melalui berbagai pengalaman dan proyek.
-                </p>
-            </section>
+.profile {
+    width: 175px;
+    height: 215px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
 
+.sidebar h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
 
-            <section>
-                <h2>Pendidikan</h2>
-
-                <div class="item">
-                    <h3>SMK Airlangga Balikpapan</h3>
-
-                    <span>2024 — Sekarang</span>
-
-                    <p>
-                        Menempuh pendidikan kejuruan dan mengembangkan
-                        keterampilan di bidang teknologi dan komputer.
-                    </p>
-                </div>
-            </section>
-
-
-            <section>
-                <h2>Keahlian</h2>
-
-                <div class="skills">
-
-                    <span>Jaringan Komputer</span>
-                    <span>MikroTik</span>
-                    <span>Linux / Debian</span>
-                    <span>HTML & CSS</span>
-                    <span>Desain</span>
-                    <span>Editing Video</span>
-                    <span>Kerja Tim</span>
-
-                </div>
-            </section>
+.status {
+    color: #c9d9ec;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
 
 
-            <section>
-                <h2>Pengalaman & Kegiatan</h2>
+/* KONTAK */
 
-                <div class="item">
-                    <h3>Proyek Teknologi</h3>
+.contact {
+    text-align: left;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 25px;
+}
 
-                    <p>
-                        Mengerjakan berbagai proyek dan latihan mengenai
-                        jaringan komputer, server Linux, desain, serta
-                        pembuatan konten digital.
-                    </p>
-                </div>
+.contact h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
 
-                <div class="item">
-                    <h3>Kegiatan Sekolah</h3>
+.contact p {
+    font-size: 14px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
 
-                    <p>
-                        Berpartisipasi dalam kegiatan sekolah, kerja kelompok,
-                        organisasi, dan berbagai proyek pengembangan diri.
-                    </p>
-                </div>
-            </section>
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
 
 
-            <section>
-                <h2>Tujuan</h2>
+/* CONTENT */
 
-                <p>
-                    Terus meningkatkan keterampilan, mendapatkan pengalaman
-                    baru, dan mempersiapkan diri untuk dunia kerja maupun
-                    pendidikan selanjutnya.
-                </p>
-            </section>
+.content {
+    padding: 45px 50px;
+}
 
-        </main>
+.content section {
+    margin-bottom: 35px;
+}
 
-    </div>
+.content h2 {
+    color: #124477;
+    font-size: 23px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dce6f2;
+}
 
-</body>
-</html>
+.content p {
+    color: #505b6b;
+}
+
+
+/* ITEM */
+
+.item {
+    margin-bottom: 22px;
+}
+
+.item h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.item span {
+    color: #50739a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #edf4fb;
+    color: #124477;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* RESPONSIVE / HP */
+
+@media (max-width: 750px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 15px;
+    }
+
+    .sidebar {
+        padding: 30px 20px;
+    }
+
+    .content {
+        padding: 30px 25px;
+    }
+
+}
